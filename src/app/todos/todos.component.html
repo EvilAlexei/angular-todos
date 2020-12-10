@@ -1,8 +1,8 @@
 <div class="todos">
     <div class="container">
-        
+
         <label for="input">Add Todo</label>&nbsp;
-        <input #input type="text" (change)="add(input.value); input.value=''">  
+        <input #input type="text" (change)="add(input.value); input.value=''">
 
         <ul class="todo-list">
             <li *ngFor="let item of filterTodo(); let i = index" [ngClass]="{'todo-completed' : item.completed, 'todo-edited':  item.edited}" class="todo-item">
